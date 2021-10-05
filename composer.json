@@ -13,5 +13,7 @@
             "email": "fuzqing@aliyun.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.2.0"
+    }
 }
