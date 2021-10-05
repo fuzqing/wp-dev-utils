@@ -4,7 +4,7 @@
     "license": "mit",
     "autoload": {
         "psr-4": {
-            "Fuzqing\\WpDevUtils\\": "src/"
+            "Fuzqing\\WpDevUtils\\": "src"
         }
     },
     "authors": [
@@ -12,5 +12,8 @@
             "name": "fuzqing",
             "email": "fuzqing@aliyun.com"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    }
 }
