@@ -3,7 +3,7 @@ namespace Fuzqing\WpDevUtils;
 
 class MyRedis
 {
-    private static \Redis|null $redis_instance = null;
+    private static $redis_instance = null;
 
     private function __construct(){}
 
@@ -24,9 +24,6 @@ class MyRedis
             }
             self::$redis_instance = $redis;
         }
-
         return self::$redis_instance;
     }
-
-
 }

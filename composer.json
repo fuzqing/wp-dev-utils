@@ -1,10 +1,10 @@
 {
     "name": "fuzqing/wp-dev-utils",
     "description": "wordpress development utils",
-    "license": "mit",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Fuzqing\\WpDevUtils\\": "src"
+            "Fuzqing\\WpDevUtils\\": "src/"
         }
     },
     "authors": [
@@ -13,7 +13,5 @@
             "email": "fuzqing@aliyun.com"
         }
     ],
-    "require": {
-        "php": ">=7.2.0"
-    }
+    "require": {}
 }

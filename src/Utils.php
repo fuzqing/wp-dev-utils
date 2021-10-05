@@ -59,12 +59,11 @@ class Utils
      * @param string $val 参数值
      * @return string
      */
-
-    public static function addUrlParameter(string $url, string $key, string $val): string
+    public static function AddUrlParameter(string $url, string $key, string $val): string
     {
         $query = parse_url($url, PHP_URL_QUERY);
         if (!empty($query)) {
-            if (!str_contains($query, $key)) {
+            if (strpos($query, $key) === false) {
                 $url .= "&$key=$val";
             } else {
                 $url = substr($url, 0, -1 * strlen($query));
@@ -210,7 +209,7 @@ class Utils
      * @param $domain
      * @return array|string
      */
-    public static function checkDomain($domain): array|string
+    public static function checkDomain($domain)
     {
         $domain = trim($domain);
         if (empty($domain)) {
@@ -390,7 +389,7 @@ class Utils
      *
      * @param array $arr 待编码的信息
      */
-    public static function jsonEncode(array $arr): bool|string
+    public static function jsonEncode(array $arr)
     {
         return json_encode($arr, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }

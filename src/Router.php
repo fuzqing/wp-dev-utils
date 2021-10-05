@@ -26,20 +26,20 @@ class Router
      *      ],
      *  ]
      */
-    private array $newRules = [];
+    private $newRules = [];
 
     /**
      * @var array
      *
      * $queryVars = ['uuid'];
      */
-    private array $queryVars = [];
+    private $queryVars = [];
 
     /**
      * 回调函数
      * @var array
      */
-    private array $templateRedirect = [];
+    private $templateRedirect = [];
 
     /**
      * 刷新路由
