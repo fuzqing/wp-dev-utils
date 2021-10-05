@@ -1,0 +1,16 @@
+{
+    "name": "fuzqing/wp-dev-utils",
+    "description": "wordpress development utils",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Fuzqing\\WpDevUtils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fuzqing",
+            "email": "fuzqing@aliyun.com"
+        }
+    ]
+}
